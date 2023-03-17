@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TestVPN</title>
+
+    <script src="https://widget.cloudpayments.ru/bundles/cloudpayments.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+<div id="element"></div>
+<script>
+    const publicId = "{{ public_id }}";
+    const subscriptionPrice = {{ subscription_price }};
+    const subscriptionPeriod = {{ period }};
+    const profileServerId = "{{ profile_server_id }}";
+</script>
+<script src="{% static 'js/payment.js' %}"></script>
+</body>
+</html>
